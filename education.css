@@ -1,0 +1,760 @@
+
+/* =========================================
+   EDUCATION PAGE
+   Acheampong Grace Otuo
+========================================= */
+
+/* HERO SECTION */
+
+.education-hero {
+  min-height: 570px;
+  padding: 100px 8%;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 50px;
+  background: #f7f3eb;
+  overflow: hidden;
+}
+
+.education-hero-content {
+  max-width: 650px;
+}
+
+.education-hero h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.04;
+  letter-spacing: -4px;
+  color: #281747;
+  margin: 25px 0;
+}
+
+.education-hero h1 span {
+  color: #f07839;
+  display: block;
+}
+
+.education-hero-content > p {
+  color: #686270;
+  max-width: 520px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.education-hero .kicker,
+.section-heading .kicker,
+.certificate-intro .kicker,
+.leadership-content .kicker,
+.education-cta .kicker {
+  color: #8b55ad;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+/* HERO ART */
+
+.education-hero-art {
+  position: relative;
+  min-height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-art-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #e9d7f0;
+  border: 2px solid #281747;
+  position: absolute;
+}
+
+.education-art-inner {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background: #281747;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  transform: rotate(-9deg);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 50px rgba(40, 23, 71, 0.2);
+}
+
+.education-art-inner span:nth-child(2) {
+  color: #f07839;
+}
+
+.education-art-star {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  color: #f07839;
+  font-size: 4rem;
+}
+
+.education-art-note {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: 3;
+  background: white;
+  padding: 16px 24px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(30, 20, 50, 0.1);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+
+/* SECTION HEADINGS */
+
+.education-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin-bottom: 55px;
+}
+
+.section-heading h2,
+.certificate-intro h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+  letter-spacing: -2px;
+  line-height: 1.1;
+  color: #281747;
+  margin: 18px 0;
+}
+
+.section-heading h2 span,
+.certificate-intro h2 span {
+  color: #f07839;
+}
+
+.section-heading > p,
+.certificate-intro > p {
+  color: #77717d;
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+
+/* EDUCATION TIMELINE */
+
+.education-timeline {
+  position: relative;
+  display: grid;
+  gap: 28px;
+  padding-left: 20px;
+}
+
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  left: 145px;
+  top: 15px;
+  bottom: 15px;
+  width: 1px;
+  background: #dfd5e5;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 65px;
+  position: relative;
+}
+
+.education-item::before {
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: 35px;
+  width: 12px;
+  height: 12px;
+  background: #f07839;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.education-year {
+  padding-top: 35px;
+  color: #8b55ad;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.education-card {
+  background: #faf8fc;
+  border: 1px solid #eee8f2;
+  border-radius: 20px;
+  padding: 32px;
+  transition: 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(40, 23, 71, 0.08);
+}
+
+.education-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.school-logo-wrap {
+  width: 75px;
+  height: 75px;
+  background: white;
+  border-radius: 15px;
+  border: 1px solid #eee8f2;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.school-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.school-initials {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #8b55ad;
+}
+
+.education-type {
+  color: #8b55ad;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-align: right;
+}
+
+.education-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.65rem;
+  color: #281747;
+  margin-bottom: 8px;
+}
+
+.education-card .qualification {
+  color: #f07839;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.education-description {
+  color: #77717d;
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+
+/* PROFESSIONAL TRAINING */
+
+.training-section {
+  background: #f7f3eb;
+  padding: 100px 0;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.training-card {
+  border-radius: 22px;
+  padding: 35px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.training-purple {
+  background: #e9dcf3;
+  color: #281747;
+}
+
+.training-orange {
+  background: #f6d7c4;
+  color: #542a1c;
+}
+
+.training-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.training-logo {
+  width: 75px;
+  height: 75px;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.training-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.training-card-top > span {
+  font-size: 2rem;
+  font-family: "Space Grotesk", sans-serif;
+  opacity: 0.5;
+}
+
+.training-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.training-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.training-course {
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.training-date {
+  font-size: 0.88rem;
+  opacity: 0.75;
+  margin-bottom: 25px;
+}
+
+.training-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(40, 23, 71, 0.2);
+  padding-top: 18px;
+  margin-top: auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+
+/* CERTIFICATES */
+
+.certificates-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.certificate-intro {
+  max-width: 650px;
+  margin-bottom: 45px;
+}
+
+.certificate-list {
+  display: grid;
+  gap: 15px;
+}
+
+.certificate-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 25px;
+  border: 1px solid #eae3ef;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.certificate-item:hover {
+  background: #faf8fc;
+  transform: translateX(5px);
+}
+
+.certificate-icon {
+  width: 55px;
+  height: 60px;
+  background: #f5e7df;
+  color: #c65c32;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.certificate-info {
+  flex: 1;
+}
+
+.certificate-info h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #281747;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.certificate-info p {
+  color: #77717d;
+  font-size: 0.85rem;
+}
+
+.certificate-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #281747;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.certificate-download span {
+  font-size: 1.2rem;
+  color: #f07839;
+}
+
+.certificate-download:hover {
+  color: #f07839;
+}
+
+
+/* LEADERSHIP SECTION */
+
+.leadership-section {
+  background: #f7f3eb;
+  padding: 110px 0;
+}
+
+.leadership-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.leadership-content h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3.7rem);
+  line-height: 1.1;
+  letter-spacing: -2px;
+  color: #281747;
+  margin: 20px 0;
+}
+
+.leadership-content h2 span {
+  color: #f07839;
+}
+
+.leadership-intro {
+  color: #77717d;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.leadership-content h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #281747;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.leadership-list {
+  list-style: none;
+  display: grid;
+  gap: 18px;
+  padding: 0;
+}
+
+.leadership-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.leadership-list li span {
+  color: #f07839;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.leadership-list li p {
+  color: #686270;
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+
+/* LEADERSHIP GALLERY */
+
+.leadership-gallery {
+  min-height: 470px;
+  position: relative;
+}
+
+.leadership-image {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e9dcf3;
+  box-shadow: 0 15px 35px rgba(40, 23, 71, 0.12);
+}
+
+.leadership-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-main {
+  width: 75%;
+  height: 340px;
+  top: 0;
+  left: 0;
+  transform: rotate(-4deg);
+}
+
+.image-secondary {
+  width: 65%;
+  height: 250px;
+  bottom: 0;
+  right: 0;
+  border: 8px solid #f7f3eb;
+  transform: rotate(5deg);
+}
+
+.leadership-gallery-note {
+  position: absolute;
+  z-index: 3;
+  top: 45%;
+  right: -10px;
+  background: #281747;
+  color: white;
+  border-radius: 30px;
+  padding: 14px 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.leadership-gallery-note span {
+  color: #f07839;
+  font-size: 1.2rem;
+}
+
+
+/* FINAL CTA */
+
+.education-cta {
+  background: #281747;
+  color: white;
+  border-radius: 25px;
+  padding: 75px 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.education-cta .kicker {
+  color: #d5b6ec;
+}
+
+.education-cta h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.7rem, 5vw, 4.5rem);
+  letter-spacing: -3px;
+  line-height: 1.08;
+  margin: 20px 0;
+}
+
+.education-cta > p {
+  max-width: 550px;
+  margin: 0 auto 30px;
+  color: #d2c8dc;
+  line-height: 1.8;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+  .education-hero {
+    grid-template-columns: 1fr;
+    padding: 80px 7%;
+  }
+
+  .education-hero-art {
+    min-height: 330px;
+  }
+
+  .leadership-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .leadership-gallery {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .education-hero {
+    padding: 70px 6%;
+  }
+
+  .education-hero h1 {
+    font-size: 3rem;
+    letter-spacing: -2px;
+  }
+
+  .education-hero-art {
+    min-height: 290px;
+  }
+
+  .education-art-circle {
+    width: 260px;
+    height: 260px;
+  }
+
+  .education-art-inner {
+    width: 195px;
+    height: 195px;
+    font-size: 1.7rem;
+  }
+
+  .education-section,
+  .certificates-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .education-timeline {
+    padding-left: 0;
+  }
+
+  .education-timeline::before {
+    display: none;
+  }
+
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .education-item::before {
+    display: none;
+  }
+
+  .education-year {
+    padding-top: 0;
+  }
+
+  .education-card {
+    padding: 25px;
+  }
+
+  .education-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .training-section,
+  .leadership-section {
+    padding: 75px 0;
+  }
+
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-card {
+    padding: 28px;
+  }
+
+  .certificate-item {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .certificate-info {
+    min-width: 150px;
+  }
+
+  .certificate-download {
+    width: 100%;
+    padding-left: 70px;
+  }
+
+  .leadership-gallery {
+    min-height: 380px;
+  }
+
+  .image-main {
+    height: 270px;
+  }
+
+  .image-secondary {
+    height: 200px;
+  }
+
+  .leadership-gallery-note {
+    right: 0;
+    top: 42%;
+  }
+
+  .education-cta {
+    padding: 50px 25px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .education-cta h2 {
+    font-size: 2.8rem;
+  }
+
+}

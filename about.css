@@ -1,0 +1,864 @@
+
+/* ==========================================
+   ACHEAMPONG GRACE OTUO
+   COMPLETE ABOUT PAGE STYLESHEET
+========================================== */
+
+.about-page {
+  overflow: hidden;
+}
+
+/* ==========================================
+   01. HERO SECTION
+========================================== */
+
+.about-hero {
+  padding: 90px 0 100px;
+  background: #f1eaf8;
+}
+
+.about-hero-inner {
+  width: min(1120px, 87%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.05fr .75fr;
+  gap: 9%;
+  align-items: center;
+}
+
+.about-hero h1 {
+  margin: 0;
+  font: 600 clamp(54px, 7vw, 86px)/.98 'Space Grotesk', sans-serif;
+  letter-spacing: -.075em;
+}
+
+.about-hero h1 span,
+.about-story h2 span,
+.about-focus h2 span,
+.leadership-inner h2 span,
+.learning-content h2 span,
+.values-heading span,
+.about-cta h2 span {
+  color: var(--purple);
+}
+
+.about-lead {
+  max-width: 570px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #494351;
+  margin: 27px 0 13px;
+}
+
+.about-support {
+  max-width: 550px;
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-bottom: 27px;
+}
+
+.about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+
+/* HERO PORTRAIT */
+
+.about-portrait-wrap {
+  min-height: 420px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.about-portrait-accent {
+  position: absolute;
+  width: 310px;
+  height: 350px;
+  background: var(--orange);
+  border-radius: 48% 52% 45% 55%;
+  transform: rotate(12deg);
+}
+
+.about-portrait {
+  position: relative;
+  z-index: 1;
+  width: min(85%, 340px);
+  height: 390px;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 12px solid white;
+  box-shadow: 0 22px 55px rgba(40,28,57,.16);
+  transform: rotate(-4deg);
+}
+
+.about-photo-note {
+  position: absolute;
+  z-index: 2;
+  bottom: 18px;
+  right: -8px;
+  background: var(--lime);
+  padding: 14px 17px;
+  font: 700 10px 'Space Grotesk', sans-serif;
+  letter-spacing: .08em;
+  transform: rotate(5deg);
+}
+
+/* ==========================================
+   02. MY STORY
+========================================== */
+
+.about-story,
+.about-learning {
+  display: grid;
+  grid-template-columns: .35fr 1fr;
+  gap: 8%;
+  padding-top: 105px;
+  padding-bottom: 110px;
+}
+
+.about-section-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.about-section-label > span {
+  color: var(--orange);
+  font: 700 12px 'Space Grotesk', sans-serif;
+}
+
+.about-section-label .kicker {
+  margin-top: 1px;
+}
+
+.about-story h2,
+.about-focus h2,
+.learning-content h2 {
+  font: 600 clamp(43px, 5vw, 62px)/1.05 'Space Grotesk', sans-serif;
+  letter-spacing: -.065em;
+  margin: 0 0 27px;
+}
+
+.about-story-content p,
+.learning-content > p {
+  max-width: 720px;
+  font-size: 14px;
+  line-height: 1.95;
+  color: var(--muted);
+  margin: 0 0 17px;
+}
+
+/* ==========================================
+   03. PROFESSIONAL EXPERTISE
+========================================== */
+
+.about-focus {
+  padding: 95px 0 105px;
+  background: #ece7df;
+}
+
+.about-focus h2 {
+  margin-bottom: 42px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.focus-card {
+  min-height: 280px;
+  padding: 25px;
+  border-radius: 4px 4px 55px 4px;
+  position: relative;
+  transition: transform .25s ease;
+}
+
+.focus-card:hover {
+  transform: translateY(-6px);
+}
+
+.focus-purple {
+  background: #e1d6f5;
+}
+
+.focus-orange {
+  background: #ffded1;
+}
+
+.focus-green {
+  background: #e2edc2;
+}
+
+.focus-card > span {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: #716a77;
+}
+
+.focus-symbol {
+  position: absolute;
+  top: 17px;
+  right: 24px;
+  color: var(--purple);
+  font-size: 29px;
+}
+
+.focus-card h3 {
+  font: 600 25px/1.08 'Space Grotesk', sans-serif;
+  letter-spacing: -.045em;
+  margin: 48px 0 13px;
+}
+
+.focus-card p {
+  color: #68616e;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ==========================================
+   04. EXPERIENCE SHOWCASE
+========================================== */
+
+.experience-showcase {
+  padding: 110px 0 100px;
+  background: #f7f3ed;
+}
+
+.experience-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 55px;
+}
+
+.experience-intro .kicker {
+  margin-bottom: 22px;
+}
+
+.experience-intro h2 {
+  font: 600 clamp(48px, 6vw, 76px)/.98 'Space Grotesk', sans-serif;
+  letter-spacing: -.075em;
+  margin: 0;
+  color: var(--ink);
+}
+
+.experience-intro h2 span {
+  color: var(--purple);
+}
+
+.experience-intro-right {
+  max-width: 290px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.experience-count {
+  font: 600 65px 'Space Grotesk', sans-serif;
+  color: var(--orange);
+  letter-spacing: -.08em;
+}
+
+.experience-intro-right p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* EXPERIENCE GRID */
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* EXPERIENCE CARDS */
+
+.experience-card {
+  position: relative;
+  padding: 30px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 38px 5px;
+  border: 1px solid rgba(35, 30, 43, .06);
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 45px rgba(35, 30, 43, .09);
+}
+
+/* CARD BACKGROUNDS */
+
+.experience-wacci {
+  background: #e9e0fa;
+}
+
+.experience-philta {
+  background: #ffe6dc;
+}
+
+.experience-absa {
+  background: #e5edcf;
+}
+
+.experience-ometsey {
+  background: #e5e9f4;
+}
+
+/* CARD HEADER */
+
+.experience-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.experience-index {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  color: #625b6b;
+}
+
+.experience-symbol {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,.65);
+  border-radius: 50%;
+  font-size: 21px;
+  color: var(--purple);
+}
+
+/* DATES AND POSITIONS */
+
+.experience-date {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 11px;
+  background: rgba(255,255,255,.65);
+  border-radius: 30px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: #51495c;
+  margin-bottom: 12px;
+}
+
+.experience-position {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  color: var(--purple);
+  margin: 0 0 11px;
+}
+
+/* ORGANISATION */
+
+.experience-card h3 {
+  font: 600 clamp(23px, 2.5vw, 30px)/1.15 'Space Grotesk', sans-serif;
+  letter-spacing: -.045em;
+  color: var(--ink);
+  margin: 0 0 9px;
+  overflow-wrap: anywhere;
+}
+
+.experience-company {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: #716a77;
+  margin: 0;
+}
+
+/* DIVIDER */
+
+.experience-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(35, 30, 43, .13);
+  margin: 23px 0 19px;
+}
+
+/* DESCRIPTION */
+
+.experience-description {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #494351;
+  margin: 0 0 16px;
+}
+
+/* RESPONSIBILITIES */
+
+.experience-highlights {
+  padding: 0;
+  margin: 0 0 25px;
+  list-style: none;
+}
+
+.experience-highlights li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #615b69;
+}
+
+.experience-highlights li::before {
+  content: "✳";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--purple);
+  font-size: 11px;
+}
+
+/* SKILL TAGS */
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.experience-tags span {
+  display: inline-block;
+  padding: 8px 11px;
+  border: 1px solid rgba(35,30,43,.15);
+  border-radius: 30px;
+  font-size: 9px;
+  font-weight: 600;
+  color: #51495c;
+  background: rgba(255,255,255,.4);
+  transition: .2s ease;
+}
+
+.experience-tags span:hover {
+  background: var(--ink);
+  color: white;
+  border-color: var(--ink);
+}
+
+/* CARD FOOTER */
+
+.experience-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid rgba(35,30,43,.13);
+  margin-top: 27px;
+  padding-top: 17px;
+}
+
+.experience-card-bottom span {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: #777080;
+}
+
+/* EXPERIENCE FOOTER NOTE */
+
+.experience-footer-note {
+  margin-top: 40px;
+  padding: 22px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--ink);
+  color: white;
+  border-radius: 4px 4px 25px 4px;
+}
+
+.footer-star {
+  color: var(--lime);
+  font-size: 27px;
+}
+
+.experience-footer-note p {
+  font: 500 13px 'Space Grotesk', sans-serif;
+  margin: 0;
+  letter-spacing: .01em;
+}
+
+/* ==========================================
+   05. LEADERSHIP
+========================================== */
+
+.about-leadership {
+  background: var(--ink);
+  color: white;
+  padding: 95px 0;
+}
+
+.leadership-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  align-items: center;
+}
+
+.leadership-inner .kicker {
+  color: var(--lime);
+}
+
+.leadership-inner h2 {
+  font: 600 clamp(43px, 5vw, 62px)/1.05 'Space Grotesk', sans-serif;
+  letter-spacing: -.065em;
+  margin: 0 0 27px;
+}
+
+.leadership-inner h2 span {
+  color: var(--orange);
+}
+
+.leadership-number {
+  display: inline-block;
+  background: var(--lime);
+  color: var(--ink);
+  padding: 9px 13px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.leadership-copy h3 {
+  font: 600 29px 'Space Grotesk', sans-serif;
+  margin: 20px 0 10px;
+}
+
+.leadership-role {
+  color: #c5bdce;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.leadership-copy > p:not(.leadership-role) {
+  color: #d0c9d5;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+
+/* ==========================================
+   06. LEARNING AND DEVELOPMENT
+========================================== */
+
+.learning-content h2 {
+  margin-bottom: 27px;
+}
+
+.learning-content > p {
+  margin-bottom: 24px;
+}
+
+.learning-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 24px 0 28px;
+}
+
+.learning-tags span {
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 10px 14px;
+  font-size: 10px;
+  font-weight: 600;
+  transition: .2s ease;
+}
+
+.learning-tags span:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: white;
+}
+
+/* ==========================================
+   07. PERSONAL VALUES
+========================================== */
+
+.about-values {
+  background: #e5dcf8;
+  padding: 75px 0 85px;
+}
+
+.values-heading {
+  font: 600 clamp(36px, 4vw, 48px)/1.05 'Space Grotesk', sans-serif;
+  letter-spacing: -.06em;
+  margin: 20px 0 40px;
+}
+
+.values-heading span {
+  color: var(--purple);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.values-grid > div {
+  padding-top: 18px;
+  border-top: 1px solid rgba(35, 30, 43, .2);
+}
+
+.values-grid > div > span {
+  color: var(--purple);
+  font: 700 11px 'Space Grotesk', sans-serif;
+}
+
+.values-grid h3 {
+  font: 600 21px 'Space Grotesk', sans-serif;
+  margin: 13px 0 7px;
+}
+
+.values-grid p {
+  color: #696271;
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ==========================================
+   08. CONTACT CALL TO ACTION
+========================================== */
+
+.about-cta {
+  padding-top: 100px;
+  padding-bottom: 105px;
+}
+
+.about-cta h2 {
+  font: 600 clamp(48px, 6vw, 75px)/.98 'Space Grotesk', sans-serif;
+  letter-spacing: -.07em;
+  margin: 0;
+}
+
+.about-cta > p:not(.kicker) {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.about-cta .button {
+  margin-top: 12px;
+}
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media(max-width: 900px) {
+
+  .about-hero-inner {
+    gap: 4%;
+  }
+
+  .about-story,
+  .about-learning {
+    gap: 5%;
+  }
+
+  .experience-grid {
+    gap: 15px;
+  }
+
+  .experience-card {
+    padding: 23px;
+  }
+
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media(max-width: 750px) {
+
+  .about-hero {
+    padding: 65px 0 70px;
+  }
+
+  .about-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(52px, 12vw, 72px);
+  }
+
+  .about-lead {
+    font-size: 15px;
+  }
+
+  .about-portrait-wrap {
+    min-height: 360px;
+  }
+
+  .about-portrait {
+    height: 335px;
+    width: min(78%, 300px);
+  }
+
+  .about-portrait-accent {
+    width: 270px;
+    height: 290px;
+  }
+
+  .about-photo-note {
+    right: 0;
+    bottom: 5px;
+  }
+
+  .about-story,
+  .about-learning {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+
+  .about-focus {
+    padding: 75px 0;
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-card {
+    min-height: 230px;
+  }
+
+  /* EXPERIENCE MOBILE */
+
+  .experience-showcase {
+    padding: 75px 0;
+  }
+
+  .experience-intro {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .experience-intro h2 {
+    font-size: 52px;
+  }
+
+  .experience-intro-right {
+    margin-top: 25px;
+  }
+
+  .experience-count {
+    font-size: 48px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .experience-card {
+    padding: 25px;
+  }
+
+  .experience-card h3 {
+    font-size: 27px;
+  }
+
+  .experience-card-top {
+    margin-bottom: 28px;
+  }
+
+  .experience-highlights li {
+    font-size: 12px;
+  }
+
+  .experience-footer-note {
+    padding: 18px;
+  }
+
+  /* LEADERSHIP MOBILE */
+
+  .leadership-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-leadership {
+    padding: 75px 0;
+  }
+
+  /* VALUES MOBILE */
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  .about-cta {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width: 390px) {
+
+  .about-buttons {
+    gap: 17px;
+  }
+
+  .about-buttons .button {
+    padding: 13px 15px;
+  }
+
+  .experience-intro h2 {
+    font-size: 43px;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-card-bottom span {
+    font-size: 7px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

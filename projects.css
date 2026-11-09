@@ -1,0 +1,835 @@
+
+/* ==========================================
+   ACHEAMPONG GRACE OTUO
+   PROJECTS PAGE STYLESHEET
+========================================== */
+
+.projects-page {
+  overflow: hidden;
+}
+
+/* ==========================================
+   01. PROJECT HERO
+========================================== */
+
+.projects-hero {
+  background: #f1eaf8;
+  padding: 90px 0 85px;
+}
+
+.projects-hero-inner {
+  width: min(1120px, 87%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 7%;
+  align-items: center;
+}
+
+.projects-hero h1 {
+  font: 600 clamp(52px, 7vw, 83px)/.98
+    'Space Grotesk', sans-serif;
+  letter-spacing: -.075em;
+  margin: 22px 0;
+  color: var(--ink);
+}
+
+.projects-hero h1 span {
+  color: var(--purple);
+}
+
+.projects-hero-copy > p:not(.kicker) {
+  max-width: 570px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.projects-hero-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.projects-hero-meta span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: #756d7d;
+}
+
+.meta-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+/* HERO ART */
+
+.projects-hero-art {
+  min-height: 340px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.project-art-circle {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.project-art-card {
+  position: relative;
+  z-index: 1;
+  width: 245px;
+  min-height: 270px;
+  background: #fffdf9;
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(-6deg);
+  box-shadow: 0 20px 45px rgba(35,30,43,.12);
+}
+
+.project-art-card > span:first-child {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  margin-bottom: 23px;
+}
+
+.project-art-card strong {
+  font: 700 43px/.98 'Space Grotesk', sans-serif;
+  letter-spacing: -.06em;
+}
+
+.project-art-card .art-purple {
+  color: var(--purple);
+}
+
+.art-star {
+  position: absolute;
+  bottom: 20px;
+  right: 22px;
+  color: var(--orange);
+  font-size: 35px;
+}
+
+.project-art-sticker {
+  position: absolute;
+  z-index: 2;
+  right: -5px;
+  bottom: 15px;
+  background: var(--lime);
+  padding: 17px 22px;
+  font: 700 10px/1.8 'Space Grotesk', sans-serif;
+  letter-spacing: .1em;
+  transform: rotate(7deg);
+}
+
+/* ==========================================
+   02. PROJECT INTRODUCTION
+========================================== */
+
+.projects-intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 95px;
+  padding-bottom: 45px;
+}
+
+.projects-intro h2 {
+  font: 600 clamp(43px, 5vw, 64px)/1
+    'Space Grotesk', sans-serif;
+  letter-spacing: -.065em;
+  margin: 15px 0 0;
+}
+
+.projects-intro h2 span {
+  color: var(--purple);
+}
+
+.projects-intro > p {
+  max-width: 390px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* ==========================================
+   03. PROJECT SHOWCASE
+========================================== */
+
+.projects-showcase {
+  padding-bottom: 110px;
+}
+
+.project-feature {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 65px;
+  align-items: center;
+  padding: 45px 0;
+  border-top: 1px solid var(--line);
+}
+
+.project-feature + .project-feature {
+  margin-top: 35px;
+}
+
+/* PROJECT PREVIEWS */
+
+.project-preview {
+  min-height: 430px;
+  position: relative;
+  padding: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview-top {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.preview-top span {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: #51495c;
+}
+
+.preview-caption {
+  position: relative;
+  z-index: 3;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  color: #625b6b;
+}
+
+/* ==========================================
+   PROJECT 01: PERFUMES
+========================================== */
+
+.perfume-preview {
+  background: #e9ded0;
+}
+
+.perfume-preview-content {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.perfume-small {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  color: #786c5d;
+}
+
+.perfume-preview-content h2 {
+  font: 600 clamp(45px, 6vw, 73px)/.88
+    'Space Grotesk', sans-serif;
+  letter-spacing: -.08em;
+  margin: 18px 0;
+  color: #34281e;
+}
+
+.perfume-preview-content h2 span {
+  color: #a1744d;
+}
+
+.perfume-preview-content > p {
+  font-size: 10px;
+  color: #786c5d;
+}
+
+.perfume-bottle {
+  position: absolute;
+  right: 14%;
+  bottom: 14px;
+  width: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(8px 12px 10px rgba(45,32,21,.2));
+}
+
+.bottle-cap {
+  width: 24px;
+  height: 23px;
+  background: #30251c;
+  border-radius: 4px 4px 0 0;
+}
+
+.bottle-neck {
+  width: 38px;
+  height: 18px;
+  background: #b79b79;
+}
+
+.bottle-body {
+  width: 95px;
+  height: 125px;
+  background: linear-gradient(135deg, #d8bd98, #a67e56);
+  border: 3px solid #f1e5d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+}
+
+.bottle-body span {
+  font: 600 14px 'Space Grotesk', sans-serif;
+}
+
+.bottle-body small {
+  font-size: 6px;
+  letter-spacing: .16em;
+}
+
+.perfume-decoration {
+  position: absolute;
+  top: 35px;
+  right: 22px;
+  color: #a1744d;
+  font-size: 42px;
+}
+
+/* ==========================================
+   PROJECT 02: STUDENT PORTAL
+========================================== */
+
+.student-preview {
+  background: #e2dcf4;
+}
+
+.student-mockup {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  margin: 30px 0 20px;
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(35,30,43,.1);
+  min-height: 280px;
+}
+
+.student-sidebar {
+  padding: 17px 10px;
+  background: #292335;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.student-logo {
+  color: white;
+  font: 700 25px 'Space Grotesk', sans-serif;
+  margin-bottom: 9px;
+}
+
+.student-sidebar > span {
+  font-size: 8px;
+  color: #c9c1d5;
+}
+
+.student-sidebar .sidebar-active {
+  background: var(--purple);
+  padding: 9px 5px;
+  color: white;
+  border-radius: 3px;
+}
+
+.student-dashboard {
+  padding: 23px 17px;
+  min-width: 0;
+}
+
+.dashboard-label {
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--purple);
+}
+
+.student-dashboard h3 {
+  font: 600 22px 'Space Grotesk', sans-serif;
+  margin: 15px 0 5px;
+  color: var(--ink);
+}
+
+.student-dashboard > p {
+  color: #807989;
+  font-size: 8px;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.dashboard-stats > div {
+  padding: 12px;
+  background: #f1ecfa;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dashboard-stats strong {
+  color: var(--purple);
+  font-size: 19px;
+}
+
+.dashboard-stats small {
+  font-size: 7px;
+  color: #807989;
+}
+
+.dashboard-course {
+  margin-top: 17px;
+  padding: 12px;
+  background: #faf8fc;
+}
+
+.dashboard-course > span {
+  font-size: 7px;
+  font-weight: 700;
+  color: #807989;
+}
+
+.dashboard-course > div {
+  height: 6px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #e9e1f5;
+}
+
+.dashboard-course > div:nth-child(3) {
+  width: 75%;
+}
+
+.dashboard-course > div:nth-child(4) {
+  width: 55%;
+}
+
+/* ==========================================
+   PROJECT 03: LEARN HUB
+========================================== */
+
+.learning-preview {
+  background: #dce9c5;
+}
+
+.learning-preview-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.learning-brand {
+  font: 700 13px 'Space Grotesk', sans-serif;
+  letter-spacing: .06em;
+  color: #273222;
+}
+
+.learning-brand span {
+  color: #648348;
+}
+
+.learning-overline {
+  margin: 32px 0 12px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  color: #667b50;
+}
+
+.learning-preview-content h2 {
+  font: 700 clamp(46px, 6vw, 70px)/.88
+    'Space Grotesk', sans-serif;
+  letter-spacing: -.08em;
+  color: #283324;
+  margin: 0;
+}
+
+.learning-preview-content h2 span {
+  color: #72994d;
+}
+
+.learning-subtitle {
+  font-size: 10px;
+  color: #667b50;
+  margin-top: 15px;
+}
+
+.learning-mini-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 23px;
+}
+
+.learning-mini-cards > div {
+  min-width: 90px;
+  background: rgba(255,255,255,.75);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.learning-mini-cards span {
+  color: #72994d;
+  font-size: 8px;
+}
+
+.learning-mini-cards strong {
+  font: 600 10px 'Space Grotesk', sans-serif;
+  color: #283324;
+}
+
+.learning-spark {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  font-size: 47px;
+  color: #72994d;
+}
+
+/* ==========================================
+   04. PROJECT DETAILS
+========================================== */
+
+.project-details {
+  position: relative;
+  padding: 10px 0;
+}
+
+.project-number {
+  font: 600 76px 'Space Grotesk', sans-serif;
+  letter-spacing: -.09em;
+  color: #e7e0ef;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.project-details .kicker {
+  margin-bottom: 14px;
+}
+
+.project-details h3 {
+  font: 600 clamp(29px, 3.5vw, 40px)/1.1
+    'Space Grotesk', sans-serif;
+  letter-spacing: -.06em;
+  color: var(--ink);
+  margin: 0 0 16px;
+}
+
+.project-description {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+.project-detail-block {
+  margin-bottom: 20px;
+}
+
+.project-detail-block h4 {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: var(--purple);
+  margin: 0 0 10px;
+}
+
+.project-detail-block p,
+.project-detail-block li {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.project-detail-block p {
+  margin: 0;
+}
+
+.project-detail-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-detail-block li {
+  position: relative;
+  padding-left: 17px;
+  margin-bottom: 5px;
+}
+
+.project-detail-block li::before {
+  content: "✳";
+  position: absolute;
+  left: 0;
+  color: var(--purple);
+}
+
+/* TECHNOLOGY TAGS */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 22px 0 25px;
+}
+
+.project-tech span {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  color: #635c6b;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* PROJECT LINK */
+
+.project-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--orange);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.project-visit span {
+  font-size: 17px;
+}
+
+.project-visit:hover {
+  color: var(--purple);
+}
+
+/* ==========================================
+   05. CLOSING SECTION
+========================================== */
+
+.projects-closing {
+  padding: 90px 0 100px;
+  background: var(--ink);
+  color: white;
+}
+
+.projects-closing .kicker {
+  color: var(--lime);
+}
+
+.projects-closing h2 {
+  font: 600 clamp(52px, 7vw, 78px)/.98
+    'Space Grotesk', sans-serif;
+  letter-spacing: -.075em;
+  margin: 22px 0;
+}
+
+.projects-closing h2 span {
+  color: var(--orange);
+}
+
+.projects-closing > .section-wrap > p:not(.kicker) {
+  max-width: 480px;
+  color: #c5bdce;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.projects-closing .button-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  color: var(--ink);
+  border-radius: 40px;
+  padding: 16px 25px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: .25s ease;
+}
+
+.projects-closing .button-light:hover {
+  background: var(--lime);
+  transform: translateY(-3px);
+}
+
+/* ==========================================
+   06. TABLET
+========================================== */
+
+@media(max-width: 900px) {
+
+  .projects-hero-inner {
+    gap: 3%;
+  }
+
+  .project-feature {
+    gap: 30px;
+  }
+
+  .project-preview {
+    min-height: 390px;
+  }
+
+  .project-art-circle {
+    width: 230px;
+    height: 230px;
+  }
+
+  .project-art-card {
+    width: 210px;
+  }
+
+}
+
+/* ==========================================
+   07. MOBILE
+========================================== */
+
+@media(max-width: 700px) {
+
+  .projects-hero {
+    padding: 65px 0;
+  }
+
+  .projects-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .projects-hero h1 {
+    font-size: clamp(49px, 11vw, 68px);
+  }
+
+  .projects-hero-copy > p:not(.kicker) {
+    font-size: 13px;
+  }
+
+  .projects-hero-art {
+    min-height: 300px;
+  }
+
+  .projects-intro {
+    display: block;
+    padding-top: 70px;
+    padding-bottom: 25px;
+  }
+
+  .projects-intro > p {
+    margin-top: 17px;
+  }
+
+  .projects-showcase {
+    padding-bottom: 75px;
+  }
+
+  .project-feature {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 30px 0;
+  }
+
+  .project-feature + .project-feature {
+    margin-top: 15px;
+  }
+
+  .project-preview {
+    min-height: 350px;
+  }
+
+  .project-details {
+    padding: 0 5px 15px;
+  }
+
+  .project-number {
+    font-size: 58px;
+  }
+
+  .project-details h3 {
+    font-size: 32px;
+  }
+
+  .perfume-preview-content h2,
+  .learning-preview-content h2 {
+    font-size: 55px;
+  }
+
+  .projects-closing {
+    padding: 75px 0;
+  }
+
+}
+
+/* ==========================================
+   08. SMALL MOBILE
+========================================== */
+
+@media(max-width: 390px) {
+
+  .projects-hero h1 {
+    font-size: 46px;
+  }
+
+  .project-preview {
+    min-height: 315px;
+    padding: 17px;
+  }
+
+  .student-mockup {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .student-dashboard {
+    padding: 15px 10px;
+  }
+
+  .learning-mini-cards > div {
+    min-width: 75px;
+  }
+
+  .project-details h3 {
+    font-size: 28px;
+  }
+
+}

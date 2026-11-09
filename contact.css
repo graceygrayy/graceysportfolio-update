@@ -1,0 +1,368 @@
+
+/* CONTACT PAGE */
+
+.contact-hero {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.contact-intro h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 1.05;
+  letter-spacing: -4px;
+  margin: 22px 0;
+  color: #25104d;
+}
+
+.contact-intro h1 span {
+  display: block;
+  color: #f07835;
+}
+
+.contact-intro > p {
+  max-width: 570px;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: #625c69;
+}
+
+.contact-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 12px 17px;
+  border-radius: 30px;
+  background: #eaf2c7;
+  color: #33431c;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #739c36;
+}
+
+.contact-highlight {
+  position: relative;
+  overflow: hidden;
+  min-height: 330px;
+  padding: 40px;
+  border-radius: 24px;
+  background: #321568;
+  color: #fff;
+}
+
+.highlight-label {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #d6c4ff;
+  font-weight: 700;
+}
+
+.contact-highlight h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 350px;
+  margin: 45px 0 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+.contact-highlight p {
+  position: relative;
+  z-index: 1;
+  max-width: 330px;
+  color: #e1d9ee;
+  line-height: 1.8;
+}
+
+.highlight-decoration {
+  position: absolute;
+  right: 10px;
+  bottom: -75px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 15rem;
+  line-height: 1;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.07);
+}
+
+
+/* CONTACT CONTENT */
+
+.contact-content {
+  padding-top: 65px;
+  padding-bottom: 110px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.contact-details h2,
+.contact-form-wrapper h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  color: #25104d;
+  margin: 18px 0;
+}
+
+.details-description {
+  color: #6d6675;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-detail-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 19px 0;
+  border-bottom: 1px solid #e9e3ee;
+  color: #25104d;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.contact-detail-card:hover {
+  transform: translateX(6px);
+}
+
+.detail-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #f4e8ff;
+  color: #54258b;
+  font-size: 1.3rem;
+}
+
+.contact-detail-card small {
+  display: block;
+  margin-bottom: 6px;
+  color: #82798b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.contact-detail-card strong {
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.detail-arrow {
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: #f07835;
+}
+
+.social-links {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-links p {
+  flex-basis: 100%;
+  color: #82798b;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.social-links a {
+  color: #321568;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #f07835;
+}
+
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 35px;
+  padding: 14px 20px;
+  border: 1px solid #321568;
+  border-radius: 8px;
+  color: #321568;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.cv-download:hover {
+  background: #321568;
+  color: #fff;
+}
+
+.cv-download span {
+  font-size: 1.2rem;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form-wrapper {
+  padding: 42px;
+  border-radius: 22px;
+  background: #f7f3ec;
+}
+
+.contact-form-wrapper h2 {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 23px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 9px;
+  color: #321568;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ded5e5;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #25104d;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f07835;
+  box-shadow: 0 0 0 3px rgba(240, 120, 53, 0.12);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa2b0;
+}
+
+.send-button {
+  width: 100%;
+  padding: 17px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 9px;
+  background: #321568;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.send-button:hover {
+  background: #f07835;
+  transform: translateY(-2px);
+}
+
+.send-button span {
+  font-size: 1.3rem;
+}
+
+.form-note {
+  margin-top: 15px;
+  color: #82798b;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .contact-hero {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-top: 75px;
+  }
+
+  .contact-highlight {
+    min-height: 280px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .contact-intro h1 {
+    letter-spacing: -2px;
+  }
+
+  .contact-highlight {
+    padding: 28px;
+    min-height: 290px;
+  }
+
+  .contact-highlight h2 {
+    margin-top: 35px;
+    font-size: 1.8rem;
+  }
+
+  .contact-content {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    gap: 45px;
+  }
+
+  .contact-form-wrapper {
+    padding: 25px 20px;
+  }
+
+  .contact-detail-card strong {
+    font-size: 0.82rem;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+}
